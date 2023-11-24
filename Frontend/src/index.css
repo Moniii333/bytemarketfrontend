@@ -291,7 +291,10 @@ label {
     height: 20px!important;
   }
   #switch {
-    top: 11rem;
-    left: 45%;
+    top: 1px;
+    left: 60%;
+  }
+  h1 {
+    max-width: 25rem;
   }
 }

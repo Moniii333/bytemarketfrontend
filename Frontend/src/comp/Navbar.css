@@ -128,12 +128,16 @@
     .header .mid_header .user .btn button{
         width: 60px;
         font-size: 10px;
+        margin-right: 22px;
     }
     .header .mid_header .logo img {
         display: none;
     }
     .header .last_header .nav ul li .link{
-        margin: 5px!important;
+        margin: 3px!important;
+    }
+    .header .last_header .nav {
+        margin-right: 45px;
     }
 }
 .header .last_header .user_profile

@@ -94,7 +94,7 @@ function App() {
           <Route path='*' element={<Products />} />
         </Routes>
         <div id='switch'>
-        <label> {theme === 'light' ? 'Light Mode' : 'Dark Mode'}
+        <label> {theme === 'light' ? 'Light' : 'Dark'}
           <ReactSwitch onChange={themeToggle} checked={theme === 'dark'}/>
         </label>
       </div>
