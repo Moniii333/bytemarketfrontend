@@ -280,7 +280,7 @@ label {
     right: 30%;
   }
 }
-@media only screen and (max-width: 390px){
+@media only screen and (max-width: 430px){
   #products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
