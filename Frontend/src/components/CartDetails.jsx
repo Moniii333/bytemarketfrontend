@@ -17,7 +17,6 @@ export default function CartDetails(props) {
 
   useEffect(() => {
     getDetails()
-    console.log('hmm:', productInfo)
   }, [])
 
   return(

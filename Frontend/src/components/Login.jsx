@@ -13,7 +13,6 @@ export default function Login () {
   const {register, handleSubmit, formState: { errors }} = useForm()
 
   const handleLogin = async (data) => {
-    console.log('login info:', data)
     try{
       const login = await userLogin({
         username: data.username,
@@ -24,7 +23,6 @@ export default function Login () {
         toast.success(`Glad to have you back ${data.username}!`)
         sessionStorage.setItem('username', data.username)
         sessionStorage.setItem('token', login.token)
-        console.log('token', login.token)
         setTimeout(() => {
           navigation('/home')
           window.location.reload(false)
