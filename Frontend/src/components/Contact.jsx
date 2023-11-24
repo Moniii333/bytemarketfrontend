@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
 
@@ -12,38 +12,38 @@ export default function Contact() {
       <div>
         Monique Avila
         <br></br>
-        <a href='emailto:monique.codes@icloud.com'><FontAwesomeIcon icon={faEnvelope} style={{color: "#a7c6fb",}} /> Email me</a>
+        <Link href='emailto:monique.codes@icloud.com'><FontAwesomeIcon icon={faEnvelope} style={{color: "#a7c6fb",}} /> Email me</Link>
         <br></br>
-        <a href='https://github.com/Moniii333'><FontAwesomeIcon icon={faGithub} /> Find me on GitHub</a>
+        <Link href='https://github.com/Moniii333'><FontAwesomeIcon icon={faGithub} /> Find me on GitHub</Link>
         <br></br>
-        <a href='www.linkedin.com/in/moniqueavila92'><FontAwesomeIcon icon={faLinkedin} /> Follow me on LinkedIn</a>
+        <Link href='www.linkedin.com/in/moniqueavila92'><FontAwesomeIcon icon={faLinkedin} /> Follow me on LinkedIn</Link>
       </div>
       <div>
         Garren Pho
         <br></br>
-        <a href='emailto:'><FontAwesomeIcon icon={faEnvelope} style={{color: "#a7c6fb",}} /> Email me</a>
+        <Link href='emailto:'><FontAwesomeIcon icon={faEnvelope} style={{color: "#a7c6fb",}} /> Email me</Link>
         <br></br>
-        <a href='https://github.com/'><FontAwesomeIcon icon={faGithub} /> Find me on GitHub</a>
+        <Link href='https://github.com/'><FontAwesomeIcon icon={faGithub} /> Find me on GitHub</Link>
         <br></br>
-        <a href='www.linkedin.com/'><FontAwesomeIcon icon={faLinkedin} /> Follow me on LinkedIn</a>
+        <Link href='www.linkedin.com/'><FontAwesomeIcon icon={faLinkedin} /> Follow me on LinkedIn</Link>
       </div>
       <div>
         Jonathan Netterstrom
         <br></br>
-        <a href='emailto:Netterstrom2000@gmail.com'><FontAwesomeIcon icon={faEnvelope} style={{color: "#a7c6fb",}} /> Email me</a>
+        <Link href='emailto:Netterstrom2000@gmail.com'><FontAwesomeIcon icon={faEnvelope} style={{color: "#a7c6fb",}} /> Email me</Link>
         <br></br>
-        <a href='https://github.com/jnett93'><FontAwesomeIcon icon={faGithub} /> Find me on GitHub</a>
+        <Link href='https://github.com/jnett93'><FontAwesomeIcon icon={faGithub} /> Find me on GitHub</Link>
         <br></br>
-        <a href='www.linkedin.com/in/jonathan-netterstrom/'><FontAwesomeIcon icon={faLinkedin} /> Follow me on LinkedIn</a>
+        <Link href='www.linkedin.com/in/jonathan-netterstrom/'><FontAwesomeIcon icon={faLinkedin} /> Follow me on LinkedIn</Link>
       </div>
       <div>
         Rachel Watkins
         <br></br>
-        <a href='emailto:rachelwatkinsokc@gmail.com'><FontAwesomeIcon icon={faEnvelope} style={{color: "#a7c6fb",}} /> Email me</a>
+        <Link href='emailto:rachelwatkinsokc@gmail.com'><FontAwesomeIcon icon={faEnvelope} style={{color: "#a7c6fb",}} /> Email me</Link>
         <br></br>
-        <a href='https://github.com/rachel-watkins'><FontAwesomeIcon icon={faGithub} /> Find me on GitHub</a>
+        <Link href='https://github.com/rachel-watkins'><FontAwesomeIcon icon={faGithub} /> Find me on GitHub</Link>
         <br></br>
-        <a href='www.linkedin.com/rachelwatkins'><FontAwesomeIcon icon={faLinkedin} /> Follow me on LinkedIn</a>
+        <Link href='www.linkedin.com/rachelwatkins'><FontAwesomeIcon icon={faLinkedin} /> Follow me on LinkedIn</Link>
       </div>
     </div>
     </div>

@@ -24,7 +24,7 @@ const Navbar = ({ isAuth, info }) => {
         <MdLocalShipping/>
         </div>
         <div className='info'>
-          <p>Get 20% off with code cool</p>
+          <p>Get 20% off with code tech</p>
         </div>
       </div>
       <div className='mid_header'>
@@ -39,7 +39,7 @@ const Navbar = ({ isAuth, info }) => {
             <CiLogout/>
           </div>
           <div className='btn'>
-          <a href='/logout'><button>LogOut</button></a>
+          <Link to='/logout'><button>LogOut</button></Link>
           </div>
         </div>
         :
@@ -49,7 +49,7 @@ const Navbar = ({ isAuth, info }) => {
           <FiLogIn/>
         </div>
         <div className='btn'>
-        <a href='/login'><button>Log In</button></a>
+        <Link to='/login'><button>Log In</button></Link>
         </div>
       </div>
         }
@@ -88,7 +88,7 @@ const Navbar = ({ isAuth, info }) => {
           </ul>
         </div>
         <div className='Offers'>
-          <p>Code: cool</p>
+          <p>Code: tech</p>
         </div>
        </div>
        </div>

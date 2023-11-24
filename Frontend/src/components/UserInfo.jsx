@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { updateShipmentInfo } from '../apiCalls/utils';
@@ -75,7 +75,7 @@ export default function UserInfo({ info }) {
             <br></br><br></br>
             <button>Update Info</button>
           </form>
-          <a href='/home'><button id='cancelBtn'>Cancel</button></a>
+          <Link to='/home'><button id='cancelBtn'>Cancel</button></Link>
         </div>
       </div>
     </div>

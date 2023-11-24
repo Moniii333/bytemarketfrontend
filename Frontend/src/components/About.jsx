@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 export default function About() {
 
@@ -16,7 +16,7 @@ export default function About() {
         <ul>
           <li><strong>Quality Assurance: </strong>We stand by the quality of our products. All electronics in our inventory undergo rigorous testing to ensure they meet the highest standards.</li>
           <li><strong>User Listings: </strong>ByteMarket offers a unique opportunity for you to list your own electronics for sale. Have a device you no longer need? Share it with our community and find it a new home.</li>
-          <li><strong>Community Engagement: </strong>We're more than just a marketplace. ByteMarket fosters a community where you can discuss, learn, and share your tech experiences with like-minded individuals. <a href="https://discord.com/">Join our discord</a> to see what others are chatting about in our tech space!</li>
+          <li><strong>Community Engagement: </strong>We're more than just a marketplace. ByteMarket fosters a community where you can discuss, learn, and share your tech experiences with like-minded individuals. <Link to="https://discord.com/" target="_blank">Join our discord</Link> to see what others are chatting about in our tech space!</li>
         </ul>
         <h2>Get in Touch</h2>
         <p>We're excited to have you as a part of the ByteMarket community. If you have any questions, suggestions, or just want to chat about the latest tech trends, feel free to reach out to us. We're here to serve your tech needs and foster a community of tech enthusiasts.

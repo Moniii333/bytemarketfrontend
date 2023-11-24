@@ -170,9 +170,9 @@ export default function Home({ isAuth, username, info }) {
         ): (
           <div>
             <br></br>
-            <a href='/login'>Click here to login to your account</a>
+            <Link to='/login'>Click here to login to your account</Link>
             <br></br>
-            <a href='/register'>Click here to create an account</a>
+            <Link to='/register'>Click here to create an account</Link>
           </div>
         )}
       </div>
