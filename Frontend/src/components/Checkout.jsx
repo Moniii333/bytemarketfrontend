@@ -1,6 +1,5 @@
-// import { loadStripe } from '@stripe/react-stripe-js'
-import { useContext, useEffect, useState } from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import { useContext } from 'react';
+import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CartContext } from "../CartContext"
 import { toast } from 'react-toastify';
@@ -22,10 +21,6 @@ export default function Checkout() {
   }))
 
   const handleCheckout = async () => {
-    const id = sessionStorage.getItem('id')
-    if(id === null){
-      toast.warning('Please login to complete purchase')
-    }
     try{
       const res = await completePurchase(items)
       if(res){
