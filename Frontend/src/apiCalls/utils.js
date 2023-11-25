@@ -148,10 +148,7 @@ const getProductID = async (id) => {
 
 const completePurchase = async (items) => {
   const id = sessionStorage.getItem('id')
-  if(id === null) {
-    console.log('Login to checkout!')
-    return
-  }
+  
   const data = JSON.stringify(items)
   let config = {
     method: 'post',
