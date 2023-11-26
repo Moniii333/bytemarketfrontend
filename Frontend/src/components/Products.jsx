@@ -2,11 +2,12 @@ import { useState, useEffect } from "react"
 import { getAllProducts } from "../apiCalls/utils"
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import { Button, Form, Col, Row } from 'react-bootstrap';
+import { Button, Form, Col, Row } from 'react-bootstrap'
 import { CartContext } from "../CartContext"
 import { useContext } from "react"
-import DeleteProduct from "./DeleteProduct";
-import EditProduct from "./EditProduct";
+import DeleteProduct from "./DeleteProduct"
+import EditProduct from "./EditProduct"
+import Spinner from 'react-bootstrap/Spinner'
 
 export default function Products() {
   const [products, setProducts] = useState([])
@@ -70,7 +71,8 @@ export default function Products() {
           onChange={(e) => setSearchParams(e.target.value.toLowerCase())}/>
       </div>
       <div id="products">
-        {productsToDisplay.map((item) => (
+        {loading !== true ? (
+        productsToDisplay.map((item) => (
           <div key={item.id} className="single-item">
             <p>{item.name}</p>
             <img id="product-img" src={item.imgurl}></img>
@@ -105,7 +107,15 @@ export default function Products() {
               </>
             ):null}
           </div>
-        ))}
+        ))
+        ) : (
+          <div id="noProducts">
+            <p>Products loading please wait...</p>
+            <Spinner animation="border" role="status">
+            <span className="visually-hidden">Loading...</span>
+            </Spinner>
+          </div>
+        )}
       </div>
       </div>
     </div>
