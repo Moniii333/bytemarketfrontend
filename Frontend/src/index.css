@@ -286,6 +286,14 @@ label {
     right: 30%;
   }
 }
+@media only screen and (max-width: 600px){
+  #switch {
+    right: -55px;
+  }
+  #shopping-cart {
+    left: 25px;
+  }
+}
 @media only screen and (max-width: 430px){
   #products {
     display: grid;
@@ -302,5 +310,10 @@ label {
   }
   h1 {
     max-width: 25rem;
+  }
+  #noProducts {
+    top: 55%;
+    right: 20%;
+    left: 20%;
   }
 }
